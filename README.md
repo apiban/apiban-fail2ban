@@ -23,7 +23,7 @@ cd /usr/local/bin/apiban
 ```
 
 ```shell 
-wget https://github.com/apiban/apiban-fail2ban/raw/v1.0/apiban-fail2ban  
+wget https://github.com/apiban/apiban-fail2ban/raw/main/apiban-fail2ban
 ```
 
 3. Download `config.json` to `/usr/local/bin/apiban/`
@@ -33,7 +33,7 @@ cd /usr/local/bin/apiban
 ```
 
 ```shell
-wget https://github.com/apiban/apiban-fail2ban/raw/v1.0/config.json
+wget https://github.com/apiban/apiban-fail2ban/raw/main/config.json
 ```
 
 4. Using your favorite text editor, update `config.json` with your APIBAN key, for e.g:
