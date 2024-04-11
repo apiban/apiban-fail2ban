@@ -1,0 +1,8 @@
+{
+	"apikey":"MY API KEY",
+	"lkid":"100",
+	"version":"0.0.1",
+	"set":"all",
+	"flush":"200",
+	"jail":"asterisk-iptables"
+}
