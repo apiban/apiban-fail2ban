@@ -11,6 +11,7 @@
   * [Install Instructions](#quick-and-easy-install-instructions)
   * [Pulling all addresses](#pulling-all-addresses)
   * [Changing Data Set](#changing-data-set)
+  * [Config parameters](#config-parameters)
 * [Logs](#logs)
   * [Log Rotation](#log-Rotation)
 * [Automation](#automation)
