@@ -64,7 +64,7 @@ cat > /etc/logrotate.d/apiban-client << EOF
 }
 EOF
 echo "-> setting up service"
-cat /lib/systemd/system/apiban-fail2ban.service << EOF
+cat > /lib/systemd/system/apiban-fail2ban.service << EOF
 [Unit]
 Description=APIBAN blocker for fail2ban
 After=network.target
@@ -77,7 +77,7 @@ ExecStart=/usr/local/bin/apiban/apiban-fail2ban
 WantedBy=multi-user.target
 EOF
 
-cat /lib/systemd/system/apiban-fail2ban.timer << EOF
+cat > /lib/systemd/system/apiban-fail2ban.timer << EOF
 [Unit]
 Description=APIBan fail2ban service schedule
 
@@ -87,7 +87,11 @@ OnUnitActiveSec=300
 [Install]
 WantedBy=timers.target
 EOF
+
 systemctl enable apiban-fail2ban.timer
+
+echo "-> starting services. this can take a bit if there is many ips"
+
 systemctl start apiban-fail2ban.timer
 systemctl start apiban-fail2ban.service
 echo "-> all done."
