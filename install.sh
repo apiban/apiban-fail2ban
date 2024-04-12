@@ -89,6 +89,7 @@ WantedBy=timers.target
 EOF
 
 systemctl enable apiban-fail2ban.timer
+systemctl enable apiban-fail2ban.service
 
 echo "-> starting services. this can take a bit if there is many ips"
 
