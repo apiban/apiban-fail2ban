@@ -111,6 +111,17 @@ Please note, a FULL pull can take a bit to add to fail2ban.
 
 The default data set chosen is `all`, which incorporates both the SIP and HTTP/HTTPS honeypot data. If you wanted to have just SIP or HTTP, change the `/usr/local/bin/apiban/config.json` `set` value to either `sip`, `http`, or `all`.
 
+### Config parameters
+
+| parameter | description |
+| --- | --- |
+| `apikey` | your APIBAN [APIKEY](#get-an-apiban-apikey) |
+| `lkid` | **l**ast **k**nown **id** - the "id" of the last ip address added |
+| `version` | the version of the config |
+| `set` | data set to use (`all`, `http`, or `sip`) |
+| `flush` | used to determine when to refresh data (about 7 days from last [FULL pull](#pulling-all-addresses))
+| `jail` | the fail2ban jail to add ip address |
+
 ## Logs
 
 Log output is saved to `/var/log/apiban-client.log`. 
