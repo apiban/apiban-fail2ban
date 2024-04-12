@@ -2,6 +2,18 @@
 
 **APIBAN is made possible by the generosity of our [sponsors](https://apiban.org/doc.html#sponsors).**
 
+## Super Simple Script Install
+
+Please at least look at the script before blindly running it on your system.
+
+**NOTE: You need an APIKEY before running this command.**
+
+Don't have a key? No problem. Visit [apiban.org](https://apiban.org) to get your free key.
+
+Then, once you have your APIKEY, run:  
+`curl -sSL https://raw.githubusercontent.com/apiban/apiban-fail2ban/main/install.sh | bash -s -- APIBANKEY`  
+_where APIKEY is your APIBAN API KEY_
+
 ## Using the GO executable
 
 You can build the client using go, or just use the pre-built executable. The user running the executable will need permission to run fail2ban commands.
