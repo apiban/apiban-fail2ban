@@ -42,7 +42,7 @@ APIKEY=$1
 echo "-> creating apiban directory and downloading client"
 mkdir /usr/local/bin/apiban
 cd /usr/local/bin/apiban
-wget https://github.com/apiban/apiban-fail2ban/raw/v0.0.1/apiban-fail2ban &>/dev/null
+wget https://github.com/apiban/apiban-fail2ban/raw/v.0.0.1/apiban-fail2ban &>/dev/null
 if [ "$?" -eq "0" ]
 then
   echo "  -o downloaded"
