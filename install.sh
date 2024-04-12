@@ -91,7 +91,7 @@ EOF
 systemctl enable apiban-fail2ban.timer
 systemctl enable apiban-fail2ban.service
 
-echo "-> starting services. this can take a bit if there is many ips"
+echo "-> starting services. this can take a bit if there are many ips"
 
 systemctl start apiban-fail2ban.timer
 systemctl start apiban-fail2ban.service
