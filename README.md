@@ -96,7 +96,7 @@ chmod +x /usr/local/bin/apiban/apiban-fail2ban
 6. Test
 
 ```shell 
-./usr/local/bin/apiban/apiban-fail2ban 
+/usr/local/bin/apiban/apiban-fail2ban 
 ```
 
 ### Pulling all addresses
