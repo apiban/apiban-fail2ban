@@ -103,7 +103,7 @@ chmod +x /usr/local/bin/apiban/apiban-fail2ban
 
 Normally, apiban-fail2ban will add just the ip's that are needed to be blocked since the last successful check. Sometimes, such as after a reboot (or restart of fail2ban), you may want to pull **all** the active address. To do so, simply use the `FULL` argument. For example:
 
-`./usr/local/bin/apiban/apiban-fail2ban FULL`
+`/usr/local/bin/apiban/apiban-fail2ban FULL`
 
 Please note, a FULL pull can take a bit to add to fail2ban.
 
